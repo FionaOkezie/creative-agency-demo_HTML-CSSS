@@ -220,6 +220,101 @@ section.home {
   border-radius: 2px;
 }
 
+/* contact html css */
+
+.contact {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-form {
+  position: relative;
+  background: #f9f9f9;
+  padding: 60px 40px 20px;
+  width: calc(100% - 400px);
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form .row {
+  width: 100%;
+  display: flex;
+}
+
+.contact-form .input50 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.contact-form .input100 {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+  resize: none;
+}
+
+.contact-form .row textarea {
+  height: 150px;
+}
+
+.contact-form .row input[type="submit"] {
+  background: #1b206e;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact-info {
+  width: 350px;
+  background: #f9f9f9;
+  padding: 60px 40px 20px;
+  height: auto;
+}
+
+.contact-info .address {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.contact-info .address img {
+  width: 20px;
+  margin-right: 40px;
+}
+
+.contact-info .address .details h4 {
+  color: #1b206e;
+}
+
+.contact-info .address .details p,
+.contact-info .address .details a {
+  color: #111;
+  text-decoration: none;
+}
+
 @media (max-width: 1068px) {
   .home-img {
     display: none;
@@ -238,6 +333,18 @@ section.home {
   .services {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 30px 30px 20px;
+  }
+  .contact-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -248,5 +355,14 @@ section.home {
   .services .service {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+  .contact-form .input50,
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0;
   }
 }
